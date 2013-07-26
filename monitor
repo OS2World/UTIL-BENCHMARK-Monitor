@@ -1,0 +1,15 @@
+
+
+monitor.exe : monitor.obj monitor.def monitor.res match.obj
+    link monitor+match ,,monitor /NOD, os2+llibce, monitor
+    rc monitor.res
+
+monitor.res : monitor.rc monitor.h monitor.ico 
+    rc -r monitor.rc
+
+monitor.obj : monitor.c monitor.h                    
+    cl -c -AL -G2sw -W3 -Os -Zp monitor.c
+ 
+match.obj : match.c match.h                    
+    cl -c -AL -G2sw -W3 -Os -Zp match.c
+

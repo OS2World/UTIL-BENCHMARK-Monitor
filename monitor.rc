@@ -1,0 +1,44 @@
+#include <os2.h>
+#include "monitor.h"
+
+/* Use any of the icons you like. The included icons are compliments  */
+/* of Jay Tunkel.                                                     */
+ICON ID_MONITOR   monitor.ico
+
+MENU ID_MONITOR   PRELOAD
+BEGIN
+    SUBMENU  "~Options", IDMOPTIONS
+        BEGIN
+            MENUITEM "~Background Color...\tAlt+b", IDMBACKG,  MIS_TEXT
+            MENUITEM "~Graph Color...     \tAlt+g", IDMFOREG,  MIS_TEXT
+            MENUITEM "~Smoothed           \tAlt+s", IDMSMOOTH, MIS_TEXT
+            MENUITEM "S~liding vs. jump   \tAlt+l", IDMSLIDE,  MIS_TEXT
+            MENUITEM "~Freeze screen      \tAlt+f", IDMFREEZE, MIS_TEXT
+            MENUITEM "F~ill               \tAlt+i", IDMFILL,   MIS_TEXT
+        END
+    SUBMENU  "~Exit", IDMEXIT
+        BEGIN
+            MENUITEM "~Exit monitor\tAlt+e",   IDMEXITNOW,MIS_TEXT
+            MENUITEM "~Return to monitor",     IDMRETURN, MIS_TEXT
+        END
+END
+ACCELTABLE ID_MONITOR PRELOAD
+BEGIN
+  "b",   IDMBACKG  , CHAR,        ALT
+  "e",   IDMEXITNOW, CHAR,        ALT
+  "g",   IDMFOREG  , CHAR,        ALT
+  "s",   IDMSMOOTH , CHAR,        ALT
+  "l",   IDMSLIDE  , CHAR,        ALT
+  "f",   IDMFREEZE , CHAR,        ALT
+  "i",   IDMFILL   , CHAR,        ALT
+  "B",   IDMBACKG  , CHAR,        ALT
+  "E",   IDMEXITNOW, CHAR,        ALT
+  "G",   IDMFOREG  , CHAR,        ALT
+  "S",   IDMSMOOTH , CHAR,        ALT
+  "L",   IDMSLIDE  , CHAR,        ALT
+  "F",   IDMFREEZE , CHAR,        ALT
+  "I",   IDMFILL   , CHAR,        ALT
+/*VK_F3, IDMEXITNOW, VIRTUALKEY*/
+END
+
+

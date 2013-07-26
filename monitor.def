@@ -1,0 +1,15 @@
+NAME    Monitor
+
+DESCRIPTION 'Marc Cohen OS/2 Monitor Sample Application'
+
+STUB    'OS2STUB.EXE'
+
+CODE    MOVEABLE
+DATA    MOVEABLE MULTIPLE
+
+HEAPSIZE  1024
+STACKSIZE 4096
+
+EXPORTS
+    MyWindowProc @1
+

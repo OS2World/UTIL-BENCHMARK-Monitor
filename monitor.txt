@@ -1,0 +1,73 @@
+
+Quicky help for MONITOR.EXE:
+
+
+The MONITOR.EXE command now accepts a number of command line options. The
+options are identified by an exact match or a unique abbreviation. Any
+on/off options may be preceeded by "NO" to invert the meaning of the
+option. If "NO" preceeds a data option, it is ignored. The options are:
+
+(NO)MENU   - Include/exclude the action bar in/from the window.
+
+INTERVAL n - Specify the sampling interval in milliseconds. (Default 1000)
+
+(NO)SMOOTH - (Don't) Smooth the graph display.
+
+(NO)SLIDE  - (Jump) Slide the graph across the window.
+
+POINTS n   - Specify the number of samples to use on the graph. (Default 151)
+
+(NO)FILL   - (Don't) Fill the graph below the line. (Eats more CPU.)
+
+BACKGROUND color - Specify the color for the background (see list below).
+
+FOREGROUND color - Specify the color for the graph (see list below).
+
+(NO)ICON   - (Don't) use the icon when minimized. If the icon is not
+             used, then the graph is drawn in the minimized window.
+
+(NO)DYNAMIC - (Don't) use dynamic calculation of the maximum idle count. This
+             determines whether the graph limits are calculated dynamically
+             (at each point) or statically (maintaining a maximum over a long
+             period of time).
+
+
+
+Colors that can be specified are:
+
+     WHITE
+     BLACK
+     BACKGROUND
+     BLUE
+     RED
+     PINK
+     GREEN
+     CYAN
+     YELLOW
+     NEUTRAL
+     DARKGRAY
+     DARKBLUE
+     DARKRED
+     DARKPINK
+     DARKGREEN
+     DARKCYAN
+     BROWN
+     PALEGRAY
+     WINDOWSTATICTEXT
+     SCROLLBAR
+     SYSBACKGROUND
+     ACTIVETITLE
+     INACTIVETITLE
+     MENU
+     WINDOW
+     WINDOWFRAME
+     MENUTEXT
+     WINDOWTEXT
+     TITLETEXT
+     ACTIVEBORDER
+     INACTIVEBORDER
+     APPWORKSPACE
+     HELPBACKGROUND
+     HELPTEXT
+     HELPHILITE
+
